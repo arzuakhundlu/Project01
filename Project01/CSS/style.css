@@ -1,0 +1,157 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+}
+
+.container{
+    padding:30px 90px;
+}
+
+.second {
+    display: flex;
+    align-items: center;
+}
+
+.first{
+    display: flex;
+    align-items: center;
+}
+
+h1{
+    font-weight: bold;
+    font-size: 55px;
+    line-height: 101.38%;
+}
+
+.box{
+    width: 33%;
+    margin-left: 15px;
+}
+
+.text{
+    float: left;
+    width: 75%;
+    font-size: 24px;
+    line-height: 150%;
+}
+
+.right{
+    display: flex;
+    margin-left: 60px;
+}
+
+h4{
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 0;
+}
+
+.box p{
+    font-size: 18px;
+}
+
+.photo1 img{
+    width: 100%;
+}
+
+.img-fluid{
+    position: relative;
+    width: 100%;
+}
+
+.photo2 img{
+    position: relative;
+    width: 100%;
+}
+
+.image{
+    width: 25%;
+}
+
+.ellipse1{
+    position: absolute;
+    top: 92%;
+    right: -1%;
+    z-index: -1;
+}
+
+.ellipse1 img{
+    width: 100%;
+}
+.ellipse2 img{
+    width: 100%;
+}
+.ellipse2{
+    position: absolute;
+    top: 130%;
+    left: 5%;
+    z-index: -1;
+}
+
+@media (max-width:430px) {
+    .container{
+        padding: 20px 30px;
+    }
+    .first{
+        flex-direction: column;
+    }
+    .second{
+        display: inline;
+    }
+    .box{
+        padding: 0;
+        width: 45%;
+    }
+    .right{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .image{
+        display: none;
+    }
+    h1{
+        font-size: 26px;
+    }
+    .text{
+        font-size: 12px;
+        padding-bottom: 40px;
+        width: 100%;
+    }
+    h4{
+        font-size: 12px;
+    }
+    .box p{
+        font-size: 10px;
+    }
+    .img-fluid{
+        width: 65%;
+    }
+}
+
+@media only screen and (max-width:880px) and (min-width:430px){
+    .container{
+        padding: 20px 40px;
+    }
+    .text{
+        font-size: 14px;
+    }
+    h1{
+        font-size: 32px;
+    }
+    h4{
+        font-size: 15px;
+    }
+    .box p{
+        font-size: 11px;
+    }
+    .right{
+        margin-left: 0px;
+    }
+    .box{
+        padding: 20px;
+        width: 33%;
+    }
+    .image{
+        display: none;
+    }
+} 
